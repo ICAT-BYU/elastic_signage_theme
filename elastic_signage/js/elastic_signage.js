@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
             $styleText += "#title-content{position:absolute; bottom:0.14em; right:0.4em;} ";
             $styleText += ".sign-logo-byu{width:2.8em; margin-bottom:0em;padding-right:0.5em;} ";
             $styleText += ".sign-logo-text{font-size:.98em; line-height:1.38em;} ";
-            $styleText += ".sign-logo-img{width:8.5em; margin-bottom:-0.08em;} ";
+            $styleText += ".sign-logo-img{width:15.8em; margin-bottom:-0.08em;} ";
 
             $styleText += "#datetime{height:" + $hfHeight + "px; width:25%; position:relative;} ";
             $styleText += "#datetime-content{position:absolute; bottom:0.46em; right:0.4em; font-size:0.9em;} ";
@@ -136,7 +136,7 @@ jQuery(document).ready(function($) {
             $styleText += "#title-content{position:absolute; bottom:0.14em; right:0.4em;} ";
             $styleText += ".sign-logo-byu{width:3.7em; margin-bottom:-0.02em;padding-right:0.5em;} ";
             $styleText += ".sign-logo-text{font-size:1.3em; line-height:1.38em;} ";
-            $styleText += ".sign-logo-img{width:13.5em; margin-bottom:-0.08em;} ";
+            $styleText += ".sign-logo-img{width:21.5em; margin-bottom:-0.08em;} ";
 
             
             $styleText += "#datetime{width:100%; height:50%;} ";
