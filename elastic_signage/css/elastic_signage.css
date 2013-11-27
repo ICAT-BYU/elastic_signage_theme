@@ -1,0 +1,299 @@
+
+@import "normalize.css";
+
+html, body {height: 100%; margin:0px; font-size:16pt; color: #fff; background-color:#001948; line-height:0}
+
+table, tbody, th, td {
+    border-collapse:collapse;
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+#header{
+	position: fixed;
+    top: 0;
+	padding:0;
+	margin:0;
+    width: 100%;
+	font-size:1.8em;
+	background-color: #001948; 
+    background: -webkit-linear-gradient(left, #001948, #0d3c6f 15%, #001948 30%, #00112f);
+	z-index:10;
+}
+#content{
+    position: fixed;
+    top:0;
+    bottom:0;
+	padding:0;
+	margin:0;
+    width:100%;
+	font-size:0.8em;
+    background-color:#003366;
+    z-index:3;
+}
+#footer{
+	position: fixed;
+    bottom: 0;
+	padding:0;
+	margin:0;
+    width: 100%;
+	background-color: #001948; 
+    background: -webkit-linear-gradient(left, #001948, #0d3c6f 15%, #001948 30%, #00112f);
+	font-size:1.8em;
+	z-index:5;
+}
+
+#weather {
+	width: 25%;
+	float:left;
+}
+#events {
+	width: 25%;
+	float:left;
+}
+
+#slide {
+	width: 75%;
+	float:left;
+	position:relative;
+}
+#slide2 {
+	width: 100%;
+	display: none;
+	float:left;
+	position:relative;
+}
+#slide-content {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden;
+}
+#slide-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#slide-content iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#title {
+    float: left;
+    width:75%;
+    position:relative;
+}
+#title-content{
+    position: absolute;
+    bottom: 0.06em;
+    left: 0.4em;
+    line-height: 0.80em;
+}
+#datetime {
+    float: left;
+    width:25%;
+    position:relative;
+}
+#datetime-content{
+    position: absolute;
+    bottom: 0.06em;
+    right: 0.4em;
+}
+
+#headline {
+    float: left;
+    width:100%;
+    position:relative;
+}
+#headline-content{
+    position: absolute;
+    top: 0.06em;
+    left: 0.4em;
+    line-height: 1em;
+}
+
+/* ================================ CLOCK CSS =================================== */
+.date-time-clock {
+    font-size: 0.50em;
+} 
+.date-time-clock table, .date-time-clock th, .date-time-clock td {
+    border-collapse:collapse;
+    border:0;
+    padding:0;
+    margin:0;
+}
+.date-time-clock .date, .date-time-clock .time {
+    font-size: 1em;
+    line-height: 1em;
+    height:1em;
+}
+.date-time-clock .ampm, .date-time-clock .second {
+    font-size: 0.4em;
+    line-height: 0.4em;
+    height:0.5em;
+    padding-left:0.2em;
+}
+.date-time-clock .ampm {
+    position: absolute;
+    top: 0.65em;
+}
+.date-time-clock .second {
+    position: absolute;
+    bottom: 0.25em;
+}
+.date-time-clock  .date {
+    padding-left:0.75em;
+}
+/* ================================ WEATHER CSS =================================== */
+#weather-content {
+    width:100%;
+    margin-bottom:0em;
+    margin-top:0em;
+}
+#weather-content .weather-table{
+    width:98%;
+    margin-bottom:0em;
+    margin-top:0em;
+}
+#weather-content .weather-td{
+    width:33%;
+    margin-bottom:0px;
+}
+.weather-img img {
+    width:3.2em;
+}
+#weather-content .weather-temp,
+#weather-content .weather-day{
+    text-align:center;
+    margin-top:0em;
+    margin-bottom:0em;
+}
+#weather-content .weather-day{
+    font-size:1em;
+    line-height:1em;
+}
+#weather-content .weather-temp {
+    font-size:0.8em;
+    line-height:0.8em;
+}
+#weather-content .weather-now,
+#weather-content .weather-max{
+    font-weight:bold;
+    color:white;
+}
+#weather-content .weather-min{
+    color:#888888;
+    padding-left:0.1em;
+}
+
+/* ================================ EVENT CSS =================================== */
+.eventTicker ul, .eventTicker li {
+    display: inline-block;
+    line-height:1.2em;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+}
+
+.eventTicker li {
+    border-collapse: separate;
+    border: 1px solid #001948;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding:0;
+    width:100%;
+    background: linear-gradient(to top, #00112f, #003366);
+}
+.eventTicker table {
+    border-collapse:collapse;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width:100%;
+}
+.eventTicker{
+    margin:0.3em;
+    font-size : 0.50em;
+}
+.calendar-table,
+.event-table {
+    color:#fff;
+}
+.calendar-table td,
+.event-table td {
+    vertical-align:top;
+}
+.calendar-title,
+.event-title {
+    vertical-align:top;
+}
+.calendar-td-date,
+.event-td-date {
+    text-align:right;
+    padding-right:0.68em;
+    font-size:2.15em;
+    line-height:1.3em;
+    color:#888;
+    width:4.2em;
+}
+.calendar-title,
+.event-title {
+    font-size:2.6em;
+    line-height:1.2em;
+}
+.calendar-time,
+.event-time {
+    font-size:2em;
+    line-height:1em;
+    font-style:italic;
+    color:#888;
+}
+.calendar-location,
+.event-location {
+    font-size:2em;
+    line-height:1.2em;
+    opacity:0.9;
+}
+
+/* ================================ TITLE CSS =================================== */
+.sign-logo-img {
+    width:8.5em;
+    margin-bottom:-0.08em;
+}
+.sign-logo-byu {
+    width:2.8em;
+    margin-bottom:0em;
+    padding-right:0.5em;
+}
+.sign-logo-text {
+    font-family:"Palatino Linotype","Palatino",Times,"Times New Roman",serif;
+    font-size: 0.98em;
+    line-height:1.38em;
+}
+
+/* ================================ HEADLINE CSS =================================== */
+#headline {
+    width:100%;
+    position:relative;
+}
+#headline-content{
+    position: absolute;
+    width:100%;
+    top: 0.2em;
+}
+#headline-content .the-headline{
+    display:inline;
+    margin:0;
+    padding:0;
+    font-size:0.7em;
+    font-weight:normal;
+    line-height:0.8em;
+}
+
