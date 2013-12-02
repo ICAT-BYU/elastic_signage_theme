@@ -230,10 +230,6 @@ table, tbody, th, td {
 .event-table td {
     vertical-align:top;
 }
-.calendar-title,
-.event-title {
-    vertical-align:top;
-}
 .calendar-td-date,
 .event-td-date {
     text-align:right;
@@ -245,20 +241,30 @@ table, tbody, th, td {
 }
 .calendar-title,
 .event-title {
+    display:block;
+    vertical-align:top;
     font-size:2.6em;
-    line-height:1.2em;
+    line-height:1.1em;
+    height:2.1em;
+    overflow:hidden;
 }
 .calendar-time,
 .event-time {
+    display:block;
     font-size:2em;
-    line-height:1em;
+    line-height:1.2em;
+    height:1.2em;
+    overflow:hidden;
     font-style:italic;
     color:#888;
 }
 .calendar-location,
 .event-location {
+    display:block;
     font-size:2em;
-    line-height:1.2em;
+    line-height:1.3em;
+    height:1.3em;
+    overflow:hidden;
     opacity:0.9;
 }
 

@@ -17,16 +17,16 @@ jQuery(document).ready(function($) {
         $LtickerOneHeight = ($LtickerAllHeight * 0.96) / 5 ;
         $PtickerAllHeight = $portaitHeight * 0.94;
         $PtickerOneHeight = ($PtickerAllHeight * 0.98) / 3 ;
-        
+
         $('#eventTicker').vTicker('stop');
         if ($curWidth > $curHeight) { // landscape
-            $('#eventTicker').vTicker('init', {speed: 600, pause: 6000, showItems: 5, mousePause: false});
-            $('#eventTicker').css("height",+$LtickerAllHeight+"px");
-            $('#eventTicker li').css("height",+$LtickerOneHeight+"px");
+            $('#eventTicker').css({"height":$LtickerAllHeight+"px"});
+            $('#eventTicker li').css({"height":$LtickerOneHeight+"px"});
+            $('#eventTicker').vTicker('init', {speed: 600, pause: 6000, showItems: 6, mousePause: false});
         } else { // portrait
-            $('#eventTicker').vTicker('init', {speed: 600, pause: 6000, showItems: 3, mousePause: false});
-            $('#eventTicker').css("height",+$PtickerAllHeight+"px");
-            $('#eventTicker li').css("height",+$PtickerOneHeight+"px");
+            $('#eventTicker').css({"height":$PtickerAllHeight+"px"});
+            $('#eventTicker li').css({"height":$PtickerOneHeight+"px"});
+            $('#eventTicker').vTicker('init', {speed: 600, pause: 6000, showItems: 4, mousePause: false});
         }
     }
  
