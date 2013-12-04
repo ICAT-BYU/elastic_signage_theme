@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 
 	$(window).resize( function(){ changeFont(); });
+	$("html").click( function(){ changeFont(); });
  
     function styleTheTicker() {
         $curWidth = $(window).width();
