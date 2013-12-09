@@ -1,7 +1,6 @@
 jQuery(document).ready(function($) {
 
 	$(window).resize( function(){ changeFont(); });
-	$("html").click( function(){ changeFont(); });
  
     function styleTheTicker() {
         $curWidth = $(window).width();
@@ -72,7 +71,7 @@ jQuery(document).ready(function($) {
             $styleText += "#headline-content .the-headline{font-size:0.55em; line-height:0.7em; white-space: nowrap; overflow: hidden;} ";
             $styleText += "#headline-content{top:0em;} ";
 
-            $styleText += ".date-time-clock{font-size:0.35em;} ";
+            $styleText += ".date-time-clock{font-size:0.38em;} ";
  
             $styleText += "#title{height:" + $hfHeight + "px; width:75%; position:relative;} ";
             $styleText += "#title-content{position:absolute; bottom:0.14em; right:0.4em;} ";
@@ -131,17 +130,17 @@ jQuery(document).ready(function($) {
             $styleText += "#headline-content .the-headline{font-size:1.0em; line-height:1.2em;} ";
             $styleText += "#headline-content{top:0.2em;} ";
 
-            $styleText += ".date-time-clock{font-size:1.4em;} ";
+            $styleText += ".date-time-clock{font-size:1.8em;} ";
             
             $styleText += "#title{height:" + $hfHeight + "px; width:100%; position:relative;} ";
             $styleText += "#title-content{position:absolute; bottom:0.14em; right:0.4em;} ";
             $styleText += ".sign-logo-byu{width:3.7em; margin-bottom:-0.02em;padding-right:0.5em;} ";
             $styleText += ".sign-logo-text{font-size:1.3em; line-height:1.38em;} ";
-            $styleText += ".sign-logo-img{width:21.5em; margin-bottom:-0.08em;} ";
+            $styleText += ".sign-logo-img{width:21.5em; margin-bottom:0.2em;} ";
 
             
             $styleText += "#datetime{width:100%; height:50%;} ";
-            $styleText += "#datetime-content{bottom:3em; right:3.5em; font-size:0.9em;} ";
+            $styleText += "#datetime-content{bottom:3em; right:1.5em; font-size:0.9em;} ";
 
             $styleText += "#content{padding-top:" + $hfHeight + "px;} ";
             $styleText += "#content{padding-bottom:" + $hfHeight + "px;} ";
@@ -160,6 +159,6 @@ jQuery(document).ready(function($) {
 	}
 
     changeFont();
-    setTimeout(changeFont,4000);
+    setTimeout(changeFont,10000);
     
 });
