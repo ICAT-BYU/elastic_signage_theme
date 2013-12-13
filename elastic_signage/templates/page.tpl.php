@@ -1,10 +1,14 @@
 	<div id="main">
 		<div id="header">
 
-            <?php if ($page['header']): ?>    
-               <?php print render($page['header']); ?>
-            <?php endif; ?>            
-
+            <div id="drupal-rendered-header" style="display:none;">
+                <!--
+                <?php if ($page['header']): ?>    
+                   <?php print render($page['header']); ?>
+                <?php endif; ?>
+                -->
+            </div>
+                
             <div id="title">
                 <div id="title-content">
 
@@ -63,7 +67,13 @@
                 </div>
             </div>
             
-            <?php print render($page['content']); ?>
+            <div id="drupal-rendered-content" style="display:none;">
+                <!--
+                <?php if ($page['content']): ?>
+                    <?php print render($page['content']); ?>
+                <?php endif; ?>
+                -->
+            </div>
             
 		</div>
 		
@@ -80,10 +90,13 @@
                 </div>
             </div>
 
-            <?php if ($page['footer']): ?>    
-               <?php print render($page['footer']); ?>
-            <?php endif; ?>            
- 
+            <div id="drupal-rendered-footer" style="display:none;">
+                <!--
+                <?php if ($page['footer']): ?>    
+                   <?php print render($page['footer']); ?>
+                <?php endif; ?>
+                -->
+            </div>
             
 		</div>
 	<div>

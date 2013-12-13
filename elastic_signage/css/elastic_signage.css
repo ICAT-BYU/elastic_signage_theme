@@ -29,7 +29,8 @@ table, tbody, th, td {
 	margin:0;
     width:100%;
 	font-size:0.8em;
-    background-color:#003366;
+    background-color:#00112f;
+    background: -webkit-linear-gradient(left, #00112f 75%, #00163f 87.5%, #00112f);
     z-index:3;
 }
 #footer{
@@ -204,12 +205,15 @@ table, tbody, th, td {
 
 .eventTicker li {
     border-collapse: separate;
-    border: 1px solid #001948;
+    border: 1px solid #001842;
     border-radius: 5px;
     -moz-border-radius: 5px;
     padding:0;
     width:100%;
-    background: linear-gradient(to top, #00112f, #003366);
+    background: -webkit-linear-gradient(#001948, #000c23);
+    background: -o-linear-gradient(#001948, #000c23);
+    background: -moz-linear-gradient(#001948, #000c23);
+    background: linear-gradient(#001948, #000c23);
 }
 .eventTicker table {
     border-collapse:collapse;
@@ -271,7 +275,7 @@ table, tbody, th, td {
 /* ================================ TITLE CSS =================================== */
 .sign-logo-img {
     width:8.5em;
-    margin-bottom:-0.08em;
+    margin-bottom:0.20em;
 }
 .sign-logo-byu {
     width:2.8em;
