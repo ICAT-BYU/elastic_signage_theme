@@ -106,7 +106,8 @@ jQuery(document).ready(function($) {
             $('div#datetime').insertAfter('div#weather-content');
 
             $styleText = "";
-            $styleText += "#slide{width: 100%;} ";
+            $styleText += "#slide{width: " +$imgWidth+ "px;} ";
+            $styleText += "#slide-content{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             $styleText += "#slide-content img{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             $styleText += "#slide-content iframe{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             
