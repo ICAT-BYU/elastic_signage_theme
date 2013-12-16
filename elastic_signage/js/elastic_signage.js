@@ -48,11 +48,12 @@ jQuery(document).ready(function($) {
             $('div#datetime').appendTo('div#header');
 
             $styleText = "";
-            $styleText += "#slide{width: 75%;} ";
+            $styleText += "#slide{width: " +$imgWidth+ "px;} ";
+            $styleText += "#slide-content{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             $styleText += "#slide-content img{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             $styleText += "#slide-content iframe{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
 
-            $styleText += "#weather{width:25%; height:" + $wHeight + "px;} ";
+            $styleText += "#weather{width:25%; height:" + $wHeight + "px; padding-left: 0.3em;} ";
             $styleText += ".weather-table{height:" + $wHeight + "px;} ";
             $styleText += ".weather-day{height:" + ($wHeight*0.20) + "px;} ";
             $styleText += ".weather-img{height:" + ($wHeight*0.50) + "px;} ";
@@ -61,7 +62,7 @@ jQuery(document).ready(function($) {
             $styleText += "#weather-content .weather-day{font-size:1em; line-height:1em;} ";
             $styleText += "#weather-content .weather-temp{font-size:0.8em; line-height:0.8em;} ";
             
-            $styleText += "#events{font-size:0.49em; width:25%; height:" + $eHeight + "px;} ";
+            $styleText += "#events{font-size:0.49em; width:25%; height:" + $eHeight + "px; padding-left: 0.8em;} ";
             $styleText += "#eventTicker li{width:96%;} ";
             $styleText += "#slide2{display:none;} ";
 
