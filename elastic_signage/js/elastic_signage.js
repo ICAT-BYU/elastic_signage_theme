@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 		$curHeight = $(window).height();
 		$fontSize = $curWidth/40;
 		$('body').css({"font-size" : $fontSize + "px"});
-
+        
 		if ($curWidth > $curHeight) { // Landscape
 		
 			$imgWidth = $curWidth * 0.74;
@@ -90,6 +90,14 @@ jQuery(document).ready(function($) {
             $styleText += "#footer{border-top:solid 0.03em #fff;} ";
 
             $styleText += "#eventTicker{font-size : 0.50em;} ";         
+
+            // RHS Theme :-)
+            var $queryString = window.location.search.substring(1);
+            if ($queryString.search("right") == 0) {
+                $styleText += "#slide{float: right;} ";
+            } else {
+                $styleText += "#slide{float: left;} ";
+            }
             
             $("#dynamicElasticSignage").remove();
             $("head").append("<style id='dynamicElasticSignage'></style>");
