@@ -52,6 +52,8 @@ jQuery(document).ready(function($) {
             $styleText += "#slide-content{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             $styleText += "#slide-content img{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             $styleText += "#slide-content iframe{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
+            $styleText += "#slide-content .active{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
+            $styleText += "#slide-content .next{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
 
             $styleText += "#weather{width:25%; height:" + $wHeight + "px; padding-left: 0.3em;} ";
             $styleText += ".weather-table{height:" + $wHeight + "px;} ";
@@ -117,7 +119,9 @@ jQuery(document).ready(function($) {
             $styleText += "#slide-content{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             $styleText += "#slide-content img{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
             $styleText += "#slide-content iframe{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
-            
+            $styleText += "#slide-content .active{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
+            $styleText += "#slide-content .next{width: " +$imgWidth+ "px; height: " +$imgHeight+ "px;} ";
+           
             $styleText += "#weather{width:50%; height:" + $weHeight + "px;} ";
             $styleText += ".weather-table{height:" + $wHeight + "px;} ";
             $styleText += ".weather-day{height:" + ($wHeight*0.20) + "px;} ";
