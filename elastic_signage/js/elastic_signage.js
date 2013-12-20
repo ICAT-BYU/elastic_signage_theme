@@ -1,7 +1,8 @@
 jQuery(document).ready(function($) {
 
 	$(window).resize( function(){ changeFont(); });
- 
+    $("head").append("<style id='dynamicElasticSignage'></style>");
+    
     function styleTheTicker() {
         $curWidth = $(window).width();
         $curHeight = $(window).height();
@@ -13,20 +14,19 @@ jQuery(document).ready(function($) {
 
         $landHeight = $LimgHeight - ($LeWidth * 9/16);
         $portaitHeight = $PimgHeight * 0.7;
-        $LtickerAllHeight = $landHeight * 0.96;
-        $LtickerOneHeight = ($LtickerAllHeight * 0.96) / 5 ;
-        $PtickerAllHeight = $portaitHeight * 0.94;
-        $PtickerOneHeight = ($PtickerAllHeight * 0.98) / 3 ;
-
-        $('#eventTicker').vTicker('stop');
+        $LtickerAllHeight = Math.floor($landHeight * 0.94 / 5) * 5;
+        $LtickerOneHeight = $LtickerAllHeight / 5 ;
+        $PtickerAllHeight = Math.floor($portaitHeight * 0.94 / 3) * 3 ;
+        $PtickerOneHeight = $PtickerAllHeight / 3 ;
+        $LtickerAllHeight += 10; // the 10px accounts for the added width of the borders
+        $PtickerAllHeight += 6; // the 6px accounts for the added width of the borders
+        
         if ($curWidth > $curHeight) { // landscape
             $('#eventTicker').css({"height":$LtickerAllHeight+"px"});
             $('#eventTicker li').css({"height":$LtickerOneHeight+"px"});
-            $('#eventTicker').vTicker('init', {speed: 600, pause: 6000, showItems: 6, mousePause: false});
         } else { // portrait
             $('#eventTicker').css({"height":$PtickerAllHeight+"px"});
             $('#eventTicker li').css({"height":$PtickerOneHeight+"px"});
-            $('#eventTicker').vTicker('init', {speed: 600, pause: 6000, showItems: 4, mousePause: false});
         }
     }
  
@@ -63,7 +63,8 @@ jQuery(document).ready(function($) {
             $styleText += "#weather-content .weather-temp{font-size:0.8em; line-height:0.8em;} ";
             
             $styleText += "#events{font-size:0.49em; width:25%; height:" + $eHeight + "px; padding-left: 0.8em;} ";
-            $styleText += "#eventTicker li{width:96%;} ";
+            $styleText += "#eventTicker ul{width:100%;} ";
+            $styleText += "#eventTicker li{width:98%;} ";
             $styleText += "#slide2{display:none;} ";
 
             $styleText += "#header{height:" + $hfHeight + "px;} ";
@@ -99,8 +100,6 @@ jQuery(document).ready(function($) {
                 $styleText += "#slide{float: left;} ";
             }
             
-            $("#dynamicElasticSignage").remove();
-            $("head").append("<style id='dynamicElasticSignage'></style>");
             $("#dynamicElasticSignage").text($styleText);
             styleTheTicker();
             
@@ -130,6 +129,7 @@ jQuery(document).ready(function($) {
             $styleText += "#weather-content{float:left; height:50%;} ";
 
             $styleText += "#events{font-size:1em; width:50%; height:" + $weHeight + "px;} ";
+            $styleText += "#eventTicker ul{width:100%;} ";
             $styleText += "#eventTicker li{width:97%;} ";
             $styleText += "#eventTicker{margin-top:1.2em;} ";
             $styleText += "#slide2{display:block;} ";
@@ -160,8 +160,6 @@ jQuery(document).ready(function($) {
 
             $styleText += "#eventTicker{font-size : 0.50em;} ";
 
-            $("#dynamicElasticSignage").remove();
-            $("head").append("<style id='dynamicElasticSignage'></style>");
             $("#dynamicElasticSignage").text($styleText);
             styleTheTicker();
  

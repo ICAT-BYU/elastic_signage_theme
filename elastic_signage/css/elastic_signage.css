@@ -195,14 +195,29 @@ table, tbody, th, td {
 
 /* ================================ EVENT CSS =================================== */
 .eventTicker ul, .eventTicker li {
-    display: inline-block;
-    line-height:1.2em;
-    overflow: hidden;
-    padding:0;
-    margin:0;
+    line-height:0px;
+    display: block;
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    
+}
+
+.eventTicker ul {
+    position:absolute; 
+    top:0px;
+    left:0px;
 }
 
 .eventTicker li {
+    position:relative; 
+    top:0px;
+    left:0px;
     border-collapse: separate;
     border: 1px solid #001842;
     border-radius: 5px;
@@ -222,9 +237,12 @@ table, tbody, th, td {
     width:100%;
 }
 .eventTicker{
-    margin:0.3em;
+    position:relative; 
+    margin:0.0em;
     font-size : 0.50em;
+    overflow: hidden;
 }
+
 .calendar-table,
 .event-table {
     color:#fff;
@@ -269,6 +287,9 @@ table, tbody, th, td {
     height:1.3em;
     overflow:hidden;
     opacity:0.9;
+}
+
+ul {
 }
 
 /* ================================ TITLE CSS =================================== */
