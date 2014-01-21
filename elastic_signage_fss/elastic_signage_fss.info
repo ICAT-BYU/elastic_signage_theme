@@ -1,0 +1,13 @@
+name = Elastic Signage Full Screen Slide Theme
+description = Yet Another Custom theme for BYU Digital Signage
+core = 7.x
+engine = phptemplate
+screenshot  = screenshot.png
+
+regions[header] = Header
+regions[content] = Content
+regions[slide] = Main Slide
+regions[footer] = Footer
+
+stylesheets[all][] = css/elastic_signage_fss.css
+scripts[] = js/elastic_signage_fss.js

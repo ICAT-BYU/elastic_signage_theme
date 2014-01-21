@@ -1,0 +1,19 @@
+name = Alternative Elastic Signage Theme
+description = Custom theme for BYU Digital Signage
+core = 7.x
+engine = phptemplate
+screenshot  = screenshot.png
+
+regions[header] = Header
+regions[content] = Content
+regions[title] = Title
+regions[datetime] = DateTime
+regions[slide] = Main Slide
+regions[slide2] = Portrait Slide
+regions[weather] = Weather
+regions[events] = Events
+regions[headline] = Headline
+regions[footer] = Footer
+
+stylesheets[all][] = css/elastic_signage_alternative.css
+scripts[] = js/elastic_signage_alternative.js
