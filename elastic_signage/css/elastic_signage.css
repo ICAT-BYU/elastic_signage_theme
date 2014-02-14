@@ -78,7 +78,7 @@ table, tbody, th, td {
     height: 100%;
 }
 #slide-content iframe {
-    position: absolute;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -326,4 +326,7 @@ ul {
     font-weight:normal;
     line-height:0.8em;
 }
-
+.yolo {
+    color:#FF5;
+    font-size:0.8em;
+}

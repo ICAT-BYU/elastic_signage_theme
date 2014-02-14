@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
             $styleText += "#header{height:" + $hfHeight + "px;} ";
             $styleText += "#footer{height:" + $hfHeight + "px;} ";
 
-            $styleText += "#headline-content .the-headline{font-size:0.55em; line-height:0.7em; white-space: nowrap; overflow: hidden;} ";
+            $styleText += "#headline-content .the-headline{font-size:0.48em; line-height:0.65em; white-space: nowrap; overflow: hidden;} ";
             $styleText += "#headline-content{top:0em;} ";
 
             $styleText += ".date-time-clock{font-size:0.38em;} ";
@@ -149,7 +149,7 @@ jQuery(document).ready(function($) {
             $styleText += "#header{height:" + $hfHeight + "px;} ";
             $styleText += "#footer{height:" + $footerHeight + "px;} ";
 
-            $styleText += "#headline-content .the-headline{font-size:2.25em; line-height:1.2em;} ";
+            $styleText += "#headline-content .the-headline{font-size:2.12em; line-height:1.47em;} ";
             $styleText += "#headline-content{top:0.2em;} ";
             $styleText += "#headline{height:" + $headlineHeight + "px;} ";
 

@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
             $styleText += "#header{height:" + $hfHeight + "px;} ";
             $styleText += "#footer{height:" + $hfHeight + "px;} ";
 
-            $styleText += "#headline-content .the-headline{font-size:0.55em; line-height:0.7em; white-space: nowrap; overflow: hidden;} ";
+            $styleText += "#headline-content .the-headline{font-size:0.48em; line-height:0.65em; white-space: nowrap; overflow: hidden;} ";
             $styleText += "#headline-content{top:0em;} ";
 
             $styleText += ".date-time-clock{font-size:0.38em;} ";
@@ -96,13 +96,8 @@ jQuery(document).ready(function($) {
 
             $styleText += "#eventTicker{font-size : 0.50em;} ";         
 
-            // RHS Theme :-)
-            var $queryString = window.location.search.substring(1);
-            if ($queryString.search("right") == 0) {
-                $styleText += "#slide{float: right;} ";
-            } else {
-                $styleText += "#slide{float: left;} ";
-            }
+            // LHS Theme :-)
+            $styleText += "#slide{float: left;} ";
             
             $("#dynamicElasticSignage").text($styleText);
             styleTheTicker();
@@ -145,7 +140,7 @@ jQuery(document).ready(function($) {
             $styleText += "#header{height:" + $hfHeight + "px;} ";
             $styleText += "#footer{height:" + $hfHeight + "px;} ";
 
-            $styleText += "#headline-content .the-headline{font-size:1.0em; line-height:1.2em;} ";
+            $styleText += "#headline-content .the-headline{font-size:0.94em; line-height:1.54em;} ";
             $styleText += "#headline-content{top:0.2em;} ";
 
             $styleText += ".date-time-clock{font-size:1.8em;} ";
